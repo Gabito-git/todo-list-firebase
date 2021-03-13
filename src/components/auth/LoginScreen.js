@@ -28,7 +28,7 @@ const LoginScreen = () => {
     }
 
     const handleResetPassword = () => {
-        if(validator.isEmail( email )){
+        if(!validator.isEmail( email )){
             Swal.fire({
                 icon: 'error',
                 title: 'Please introduce a valid e-mail',                
